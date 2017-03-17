@@ -9,7 +9,7 @@ Um die Zeit effektiv nutzen zu können, testet bitte eure Dockerumgebung mit der
 
   a) Docker for Windows: Powershell starten
 
-  b) Docker-Toolbox: Eingabeaufforderung cmd starten und Verbindung herstellen (Siehe <a hrfe="https://docs.docker.com/toolbox/toolbox_install_windows/#step-3-verify-your-installation" target"_blank">Docs</a>)
+  b) Docker-Toolbox: Eingabeaufforderung cmd starten und Verbindung herstellen (Siehe <a href="https://docs.docker.com/toolbox/toolbox_install_windows/#step-3-verify-your-installation" target"_blank">Docs</a>)
 
 3) Im geklonten Repo in den Ordner dockerfiles/StartupApp wechseln
 
