@@ -66,7 +66,7 @@
    <g id="svg_42" transform="translate(-32)">
     <g id="svg_43"/>
     <text id="svg_44" y="13" x="64" font-weight="700" font-style="normal" font-size="14px" font-family="&quot;Arial&quot;" fill="rgb(0, 0, 0)">IBus</text>
-    <text id="svg_45" y="13" x="95" font-weight="700" font-style="normal" font-size="14px" font-family="&quot;Arial&quot;" fill="rgb(0, 0, 0)">(</text>
+    <text id="svg_45" y="13" x="99" font-weight="700" font-style="normal" font-size="14px" font-family="&quot;Arial&quot;" fill="rgb(0, 0, 0)">(</text>
     <text id="svg_46" y="13" x="103" font-weight="700" font-style="normal" font-size="14px" font-family="&quot;Arial&quot;" fill="rgb(0, 0, 0)">Message</text>
     <text id="svg_47" y="13" x="166" font-weight="700" font-style="normal" font-size="14px" font-family="&quot;Arial&quot;" fill="rgb(0, 0, 0)">Patterns</text>
     <text id="svg_48" y="13" x="222" font-weight="700" font-style="normal" font-size="14px" font-family="&quot;Arial&quot;" fill="rgb(0, 0, 0)">)</text>
@@ -199,7 +199,7 @@
    </g>
    <g id="svg_130" transform="translate(-23)">
     <g id="svg_131"/>
-    <text id="svg_132" y="13" x="46" font-weight="700" font-style="normal" font-size="14px" font-family="&quot;Arial&quot;" fill="rgb(207, 226, 243)">Connenction</text>
+    <text id="svg_132" y="13" x="46" font-weight="700" font-style="normal" font-size="14px" font-family="&quot;Arial&quot;" fill="rgb(207, 226, 243)">Connection</text>
     <text id="svg_133" y="30" x="46" font-weight="700" font-style="normal" font-size="14px" font-family="&quot;Arial&quot;" fill="rgb(207, 226, 243)">Management</text>
    </g>
   </g>

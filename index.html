@@ -157,7 +157,7 @@ namepace FP.MsRmq.Connecting
                                 <td></td>								
 							</tr>
 							<tr>
-								<td>passwort</td>
+								<td>password</td>
 								<td>guest</td>
                                 <td></td>
 							</tr>
@@ -247,7 +247,7 @@ myBus.Send("MyMessageQueue", new MyClassB {});</code></pre>
                 </section>
                 <section>
                     <h3>Voraussetzungen</h3>
-                    Damit die verschienden Nodes verknüpft werden können, müssen sie das gleich ERLANG COOKIE besitzen.
+                    Damit die verschiedenen Nodes verknüpft werden können, müssen sie das gleiche ERLANG COOKIE besitzen.
                 </section>
                 <section>
                     <h3>Beispiel mit Docker</h3>
@@ -306,7 +306,7 @@ rabbitmqctl -n rabbit@rmqNode3 start_app</code></pre>
                     Loadbalancer entscheidet über Verteilung und ist für den Client transparent.
                      <pre><code class="cs">var myBus = RabbitHutch.CreateBus("host=IP-LoadBalancer");</code></pre>
                     <h3>Cluster mit re-try loop</h3>
-                    EasyNetQ versucht nach einem Verbindungsproblem den nächsten Host. Ist kein Host verfügbar, werden alle 5 Sekunde alle Host geprüft.
+                    EasyNetQ versucht nach einem Verbindungsproblem den nächsten Host zu finden. Ist kein Host verfügbar, werden alle 5 Sekunden alle Hosts geprüft.
                      <pre><code class="cs">var myBus = RabbitHutch.CreateBus("host=host1,host2,host3");</code></pre>
                 </section>
                  <section>
@@ -337,21 +337,21 @@ Set-ExecutionPolicy RemoteSigned
                  <section>
                      <h3>Authorization / Uploader  </h3>
                      <ul>
-                         <li>Anfragen zur Authentifzierung empfangen und Benutzerdaten gegen UserRepository prüfen</li>
+                         <li>Anfragen zur Authentifizierung empfangen und Benutzerdaten gegen UserRepository prüfen</li>
                          <li>Authentifzierungsantworten mit Prüfergebnis versenden</li>
                          <li>Versandjobs an externe Anwendung empfangen und per HTTP übertragen</li>
                      </ul>
                 </section>
                 <section>
-                    <h3>Image Prozessor / Image Persitor</h3>
+                    <h3>Image Prozessor / Image Persistor</h3>
                     <ul>
                         <li>Verarbeitungsjob empfangen und an Grafikverarbeitung übergeben</li>
-                        <li>Folgejobs an Persitor / Uploader versenden</li>
+                        <li>Folgejobs an Persistor / Uploader versenden</li>
                         <li>Grafiken für den Benutzer speichern</li>
                     </ul>
                   </section>
                   <section>
-                      Der komplette Anwendungstack besteht aus 6 .NET-Services und 3 Infrastruktur-Services die ihre jeweilen Ports veröffentlichen.
+                      Der komplette Anwendungsstack besteht aus 6 .NET-Services und 3 Infrastruktur-Services, die ihre jeweilen Ports veröffentlichen.
                       <br/>
                       <br/>
                       Zum Starten bitte in das docker-compose - File aus dem Ordner /dockerfiles/picflow/ starten.
@@ -359,7 +359,7 @@ Set-ExecutionPolicy RemoteSigned
                       Beenden 
                       <pre><code class="docker">docker-compose down
 docker-compose rm</code></pre>
-                    Um den eigenen Code zu bauen bitte das Powershell-Script build.ps1 nutzen.
+                    Um den eigenen Code zu bauen, bitte das Powershell-Script build.ps1 nutzen.
                   </section>
 			</section>
             <section>
@@ -432,16 +432,16 @@ myBus = RabbitHutch.CreateBus(connection, services => { });
                     <img src="images/vhost.svg" style="border:0;height:500px;"/>
                 </section>
                 <section>
-                    <h3>Anlegen Benutzer per Management-UI</h3>
+                    <h3>Benutzer per Management-UI anlegen</h3>
                    <img src="images/adduser.png" style="border:0;height:500px; float: right"/>
                     Admin -> User -> Add a User<br />
                     <br /><h3>Tags</h3>
-                    Die Tage schalten Funktionen wie den Zugriff auf die Management-UI frei. 
+                    Die Tags schalten Funktionen wie den Zugriff auf die Management-UI frei. 
                     Die Pflege erfolgt per Links unterhalb der Textbox - nicht manuell!
                 </section>
                 <section>
-                    <h3>Anlegen V-Host per Management-UI</h3>
-                    Admin -> Virtual Host -> Add a new virtual host
+                    <h3>V-Host per Management-UI anlegen</h3>
+                    Admin -> Virtual Hosts -> Add a new virtual host
                     <img src="images/addvhost.png" style="border:0;height:400px;"/>
                 </section>
                 <section>
@@ -451,7 +451,7 @@ myBus = RabbitHutch.CreateBus(connection, services => { });
                         <li>Benutzer auswählen</li>
                         <li>V-Host auswählen</li>
                         <li>Berechtigungen ggf. einschränken</li>
-                        <li>Bestätigung mit 'Set Permission'</li>
+                        <li>Bestätigung mit 'Set permission'</li>
                     </ol>
                 </section>
                 <section>
@@ -476,7 +476,7 @@ myBus = RabbitHutch.CreateBus(connection, services => { });
                     Die Implementierungen des Interface IScheduler steuern die zeitversetzte Nachrichtenübertragung.
                     <br />
                     <br />
-                    Die Auswahl der Implementierung erfolgt per Registierung.
+                    Die Auswahl der Implementierung erfolgt per Registrierung.
                     <pre><code class="cs">var myBus = RabbitHutch.CreateBus("host=localhost",
    register => register.Register&lt;IScheduler,MongoScheduler.MongoScheduler&gt;());</code></pre>
                 </section>
@@ -494,7 +494,7 @@ $ docker run -d --hostname rmqDelayEx --name rmqDelayEx
                             </code>
                         </pre>
                     Die IScheduler-Implementierung DelayedExchangeScheduler wird von EasyNetQ mitgeliefert.
-                    Delayed Message Plugin unterstützt kein Abbruch (Cancelling) von Nachrichten -> NotImplementedException!
+                    Delayed Message Plugin unterstützt keinen Abbruch (Cancelling) von Nachrichten -> NotImplementedException!
                 </section>
                 <section>
                     <h3>Mongo Scheduler</h3>
