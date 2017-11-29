@@ -46,4 +46,4 @@ Der Fokus liegt des Workshops liegt auf der Implementierung der .Net-Microservic
 
 Um die korrekte Funktion der Dockerumgebung zu testen startet bitte die <a href="startupApp.md" > StartUp-App </a>.
 
-<b>Die finale Präsentation könnt ihr nach der Veranstaltung auf der GitHub-Page einsehen.</b>
+<b>Die Präsentation könnt ihr auf der <a href="https://fpommerening.github.io/Spartakiade2017-RabbitMQ/#/" target="_blank">GitHub-Page</a> einsehen.</b>
